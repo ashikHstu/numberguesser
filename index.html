@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .success, .error{
+            color:white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success{
+            background:green;
+        }
+
+        .error{
+            background: red;
+        }
+
+        .button {
+  transition-duration: 0.4s;
+  width: 50%;
+  margin-left: 200px;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.guess{
+    width: 40%;
+    
+    margin-left: 200px;
+    
+}
+
+    </style>
+
+    <title>Number Guesser Game</title>
+</head>
+<body>
+ <hr>
+    <h1 style="text-align: center;">Welcome to Guesser Numbar Game!</h1><hr>
+    <div class="container">
+
+
+        <form id="game-input">
+            <div>
+
+                <label for="title">Enter the Number you guessed(Between 1 and 10) : </label>
+                <input type="text" id="guess" class="u-full-width">
+
+            </div>
+        </form>
+
+        <h5 id="rem"></h5>
+
+        <div>
+            <button class="button" id='sub'>Guess Number</button>
+            <!-- <input type="submit" class="guess" value="Guess Number" class="button" > -->
+        </div>
+        <h5 id="res"></h5>
+
+        <h4 id="restart"></h4>
+
+    </div>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
